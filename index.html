@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!-- 
+    1. h1 - h6 - heading
+    2. p - paragraph
+    3. img - image
+    4. a - anchor
+    5. ul, li - unordered list, list item
+    6. table
+    7. input
+    8. button
+    9. div - divide 
+-->
+<html lang="en">
+<!-- Phần đầu -->
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Share English</title>
+    <link rel="stylesheet" href="/f8-shop/MyWeb/main.css" type="text/css">
+    <link rel="stylesheet" href="/f8-shop/MyWeb/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <style type="text/css">
+        h3 {
+            color: black;
+            font-weight: 200;
+            font-style: oblique;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+        }
+        p {
+            color: black;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: italic;
+        }
+        h1 {
+            color: black;
+            font-style: unset;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+        }
+        .abc {
+            color: darkmagenta;
+        }
+        #def {
+            color: olive;
+        }
+    </style>
+</head>
+<!-- Phần thân -->
+<body onload="time()">
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="wrapper__header">
+            <header class="header__header">
+                <div>
+                    <nav class="header__navbar">
+                        <div id="clock"></div>
+                        <div class="header__navbar__left">
+                            <div class="header__navbar__left__divide">
+                                <a href="#language" class="header__navbar__left__divide__link language">Ngôn ngữ</a>
+                            </div>
+                        </div>
+                        <div class="header__navbar__right">
+                            <div class="header__navbar__right__divide" style="margin-right: -9px">
+                                <a href="/f8-shop/MyWeb/validation-signup.html" class="header__navbar__right__divide__link signup">Đăng ký</a>
+                            </div>
+                            <div class="spacer-between-signup-and-login"></div>
+                            <div class="header__navbar__right__divide">
+                                <a href="/f8-shop/MyWeb/validation-login.html" class="header__navbar__right__divide__link login">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header__divide__box box1"><h1 class="header__divide__heading heading1">BOX 1</h1></div>
+                <div class="header__divide__box box2"><h1 class="header__divide__heading heading2"></h1></div>
+                <div class="header__divide__box box3"><h1 class="header__divide__heading heading3"></h1></div>
+                <div class="spacer-between-navbar-and-greeting"></div>
+                <h2 title="Chào mừng đến với Share English!">Welcome to Share English!</h2>
+            </header>
+        </div> 
+        <!-- Container -->
+        <div class="wrapper__container">
+            <main class="container__container">
+                <h3 title="Xin chào tất cả các bạn!">Xin chào tất cả các bạn!</h3>
+                <h1 title="Cách đọc tất cả các quốc gia trên thế giới">How to say all the countries in the world.</h1>
+                <p>Mình sẽ hướng dẫn các bạn cách đọc các quốc gia trên toàn thế giới.</p>
+                <img src="https://media.npr.org/assets/img/2013/03/06/bluemarble3k-smaller-nasa_custom-644f0b7082d6d0f6814a9e82908569c07ea55ccb-s800-c85.jpg" alt="Ảnh: Trái Đất. Nguồn: NPR" title="Ảnh: Trái Đất" width="" height="">
+                <h4><a style="color: red;" id="def" class="abc" href="https://www.youtube.com/channel/UCkQcGc99u3sqFFz251jfnMQ" target="_blank">Tới kênh Youtube Share English</a></h4>
+                <ul>
+                    <li title="Phần 1">Phần 1</li>
+                    <li title="Phần 2">Phần 2</li>
+                    <li title="Phần 3">Phần 3</li>
+                    <li title="Phần 4">Phần 4</li>
+                    <li title="Phần 5">Phần 5</li>
+                    <li title="Phần 6">Phần 6</li>
+                    <li title="Phần 7">Phần 7</li>
+                    <li title="Phần 8">Phần 8</li>
+                    <li title="Phần 9">Phần 9</li>
+                    <li title="Phần 10">Phần 10</li>
+                    <li title="Phần 11">Phần 11</li>
+                    <li title="Phần 12">Phần 12</li>
+                    <li title="Phần 13">Phần 13</li>
+                    <li title="Phần 14">Phần 14</li>
+                    <li title="Phần 15">Phần 15</li>
+                    <li title="Phần 16">Phần 16</li>
+                    <li title="Phần 17">Phần 17</li>
+                </ul>
+                <div>
+                    <table>
+                        <thead>
+                            <th title="Phần">Phần</th>
+                            <th title="Khu vực">Khu vực</th>
+                            <th title="Mô tả">Mô tả</th>
+                            <th title="Đánh dấu">Đánh dấu</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td title="Đông Nam Á">Đông Nam Á</td>
+                                <td>https://en.wikipedia.org/wiki/Southeast_Asia</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__1"></td>                       
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td title="Đông Á">Đông Á</td>
+                                <td>https://en.wikipedia.org/wiki/East_Asia</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__2"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td title="Trung Á">Trung Á</td>
+                                <td>https://en.wikipedia.org/wiki/Central_Asia</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__3"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td title="Nam Á">Nam Á</td>
+                                <td>https://en.wikipedia.org/wiki/South_Asia</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__4"></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td title="Tây Á">Tây Á</td>
+                                <td>https://en.wikipedia.org/wiki/Western_Asia</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__5"></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td title="Bắc Âu">Bắc Âu</td>
+                                <td>https://en.wikipedia.org/wiki/Northern_Europe</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__6"></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td title="Tây Âu">Tây Âu</td>
+                                <td>https://en.wikipedia.org/wiki/Western_Europe</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__7"></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td title="Trung Âu">Trung Âu</td>
+                                <td>https://en.wikipedia.org/wiki/Central_Europe</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__8"></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td title="Nam Âu">Nam Âu</td>
+                                <td>https://en.wikipedia.org/wiki/Southern_Europe</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__9"></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td title="Đông Nam Âu">Đông Nam Âu</td>
+                                <td>https://en.wikipedia.org/wiki/Southeast_Europe </td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__10"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td title="Đông Âu">Đông Âu</td>
+                                <td>https://en.wikipedia.org/wiki/Eastern_Europe</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__10"></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td title="Bắc Phi">Bắc Phi</td>
+                                <td>https://en.wikipedia.org/wiki/North_Africa</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__11"></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td title="Nam Phi">Nam Phi</td>
+                                <td>https://en.wikipedia.org/wiki/Southern_Africa</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__12"></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td title="Tây Phi">Tây Phi</td>
+                                <td>https://en.wikipedia.org/wiki/West_Africa</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__13"></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td title="Trung Phi">Trung Phi</td>
+                                <td>https://en.wikipedia.org/wiki/Central_Africa</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__14"></td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td title="Đông Phi">Đông Phi</td>
+                                <td>https://en.wikipedia.org/wiki/East_Africa</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__15"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td title="Đông Bắc Phi">Đông Bắc Phi</td>
+                                <td>https://en.wikipedia.org/wiki/Northeast_Africa</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__15"></td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td title="Nam Mỹ">Nam Mỹ</td>
+                                <td>https://en.wikipedia.org/wiki/South_America</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__16"></td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td title="Trung Mỹ">Trung Mỹ</td>
+                                <td>https://en.wikipedia.org/wiki/Central_America</td>
+                                <td><input type="checkbox" class="container__table__table-body__table-row__table-data__input__checkUserClickToGoToLearn__17"></td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+                <div class="spacer-between-table-and-introduce"></div>
+                <p class="introduce-about-my-course">Đây là khóa học <b><i>How to say all the countries in the world</i></b>. Tổng cộng cả khóa học này gồm 17 phần(được liệt kê ở bảng trên). Mỗi phần là 1 khu vực của 1 châu lục. Bên cạnh đó còn có mô tả về khu vực của châu lục mà mình hướng dẫn trong video đó. Để học, bạn có thể thực hiện 1 trong những cách sau:
+                    <br>
+                    Cách 1: Vào kênh Youtube Share English <a href="https://www.youtube.com/channel/UCkQcGc99u3sqFFz251jfnMQ" target="_blank">tại đây</a>.
+                    <br>
+                    Cách 2: Đánh dấu vào ô trống của bất kì phần nào mà bạn muốn học ở bảng trên, sau đó sẽ hiện ra 1 hộp thoại giống như sau:
+                    <img src="/f8-shop/MyWeb/images/abc.png" alt="" class="RegisterDialog">
+                    <br>
+                    Sau đó bạn hãy nhấn OK để hiện ra hộp thoại giống như sau:
+                    <br>
+                    <img src="/f8-shop/MyWeb/images/def.png" alt="" class="RegisterDialog">
+                    <br>
+                    Sao chép đường link vào trình duyệt để học thôi. Đơn giản đúng không nào?
+                    <br>
+                    Cách 3: Vào <i><u>Danh sách phát</u></i> của khóa học này <a href="https://www.youtube.com/playlist?list=PLkvcsdOtUddY0AlnTWs9KgHDVgvEP1tK8" target="_blank">tại đây</a>.
+                    <br>
+                </p>
+                
+            </main>
+        </div>
+        <div class="spacer-between-container-and-footer"></div>
+        <!-- Footer -->
+        <div class="wrapper__footer">
+            <footer class="footer__footer">
+                <div class="footer__intro grid__column-1">
+                    <br>
+                    <header class="footer__intro__heading"></header>
+                </div>
+                <div class="footer__intro grid__column-2">
+                    <br>
+                    <header class="footer__intro__heading">Theo dõi Share English tại</header>
+                    <br>
+                    <a href="https://www.facebook.com/Chia-Se%CC%89-Ti%C3%AA%CC%81ng-Anh-Share-English-749863645202402/" class="footer__intro__fanpage-link">
+                        <i class="fa fa-facebook-f" style="font-size:1.0625rem;color: blue;">
+                            <p class="footer__intro__fanpage-link--page"> Chia Sẻ Tiếng Anh - Share English</p>
+                        </i>
+                    </a>
+                    <br>
+                    <a href="https://www.youtube.com/channel/UCkQcGc99u3sqFFz251jfnMQ" class="footer__intro__youtube-link">
+                        <i class="fa fa-youtube-play" style="font-size:1.0625rem;color: red">
+                            <p class="footer__intro__youtube-link--channel"> Share English</p>
+                        </i>
+                    </a>
+                </div>
+                <div class="footer__intro grid__column-3">
+                    <br>
+                    <header class="footer__intro__heading"></header>
+                </div>
+                <div class="footer__intro grid__column-4">
+                    <br>
+                    <header class="footer__intro__heading">Về Share English</header>
+                </div>
+                <div class="footer__intro grid__column-5">
+                    <br>
+                    <header class="footer__intro__heading"></header>
+                </div>
+
+            </footer>
+
+        </div>
+        <div id="language">
+            <footer class="footer__language">
+                <a href="/f8-shop/MyWeb/index.html" class="footer__language-link">
+                    <p class="footer__language-text">
+                        <b>Tiếng Việt</b>
+                    </p>
+                </a>
+                <a href="/f8-shop/MyWeb/index-english.html" class="footer__language-link">
+                    <h5>English</h5>
+                </a>
+                <a href="/f8-shop/MyWeb/index-french.html" class="footer__language-link">
+                    <h5>Français(France)</h5>
+                </a>
+                <a href="/f8-shop/MyWeb/index-filipino.html" class="footer__language-link">
+                    <h5>Filipino</h5>
+                </a>
+            </footer>
+        </div>
+    <script src="/f8-shop/MyWeb/main.js"></script>
+</body></html>

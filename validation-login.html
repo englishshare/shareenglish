@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="/f8-shop/MyWeb/style.css" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Đăng nhập</h3>
+            <p class="description">Cùng nhau học tiếng Anh miễn phí với Share English!❤️</p>
+            <div class="spacer">
+                <button class="Google-login" type="button">
+                    <svg width='18' height='18' xmlns='http://www.w3.org/2000/svg'><g fill='none' fill-rule='evenodd'><path d='M17.64 9.205c0-.639-.057-1.252-.164-1.841H9v3.481h4.844a4.14 4.14 0 01-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z' fill='#4285F4'/><path d='M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 009 18z' fill='#34A853'/><path d='M3.964 10.71A5.41 5.41 0 013.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 000 9c0 1.452.348 2.827.957 4.042l3.007-2.332z' fill='#FBBC05'/><path d='M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 00.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z' fill='#EA4335'/><path d='M0 0h18v18H0z'/></g></svg>                    
+                    <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="login-with-Google">Đăng nhập với Google</a>
+                </button>
+                <div class="social-network__spacer">
+                    <button class="Facebook-login" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#3b5998" d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.61v-6.97h-2.34V11.3h2.34v-2c0-2.33 1.42-3.6 3.5-3.6 1 0 1.84.08 2.1.12v2.43h-1.44c-1.13 0-1.35.53-1.35 1.32v1.73h2.69l-.35 2.72h-2.34V21h4.59a1 1 0 0 0 .99-1V4a1 1 0 0 0-1-1z"></path></svg>
+                        <a href="https://www.facebook.com/login/device-based/regular/login/" class="login-with-Facebook">Đăng nhập với Facebook</a>
+                    </button>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="email" placeholder="VD: shareenglish955@gmail.com" class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="confirm-account">
+            </div>
+            <button class="form-submit" type="submit">Đăng nhập</button>
+            <div class="spacer"></div>
+            <p class="ask-user-have-to-has-an-account">Bạn chưa có tài khoản?</p>
+            <p class="ask-user-have-to-has-an-account">Hãy đăng ký trải nghiệm miễn phí ngay bằng cách:</p>
+            <button type="submit" class="signup-by-link-from-login__btn">
+                <a href="/f8-shop/MyWeb/validation-signup.html" class="signup-by-link-from-login__link">Tạo tài khoản mới</a>
+            </button>
+        </form>
+    </div>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        // Mong muốn của chúng ta
+        Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 6),
+              ],
+              onSubmit: function (data) {
+                // Call API
+                console.log(data);
+              }
+            });
+        }); 
+    </script>
+    <script src="/f8-shop/MyWeb/validator.min.js"></script>
+</body>
+</html>
